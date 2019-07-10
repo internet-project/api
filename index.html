@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body
+    style="background-image: linear-gradient(to bottom, rgba(6, 81, 167, 0.767) , rgb(28, 149, 189)); background-repeat: no-repeat;"
+  >
+    <div style="max-width:550px; margin:0 auto;">
+      <header>
+        <h1 style="color:rgb(18, 5, 78) ">Weatherapi</h1>
+      </header>
+
+      <section id="main">
+        <h2 style="color: rgb(155, 13, 42)" id="w-name">London</h2>
+        <h3>
+          <img
+            id="w-icon"
+            src="https://openweathermap.org/img/w/02d.png"
+            alt="Weather"
+            width="50"
+            height="50"
+          /><span style="color:indigo" id="w-degree">10</span> &#8451;
+        </h3>
+        <p id="w-description">light intensity drizzle rain</p>
+        <p id="w-updated-time">01:25 Apr 27</p>
+        <table>
+          <tbody>
+            <tr>
+              <td style="color: navy"><b>Wind:</b></td>
+              <td><span style="color:indigo" id="w-wind"></span> m/s</td>
+            </tr>
+            <tr>
+              <td style="color: navy"><b>Cloudiness:</b></td>
+              <td><span style="color: indigo" id="w-cloudiness"></span>%</td>
+            </tr>
+            <tr>
+              <td style="color: navy"><b>Pressure:</b></td>
+              <td><span style="color: indigo" id="w-pressure"></span> hpa</td>
+            </tr>
+            <tr>
+              <td style="color: navy"><b>Humidity:</b></td>
+              <td><span style="color: indigo" id="w-humidity"></span>%</td>
+            </tr>
+            <tr>
+              <td style="color: navy"><b>Sunrise:</b></td>
+              <td id="w-sunrise">09:12</td>
+            </tr>
+            <tr>
+              <td style="color: navy"><b>Sunset:</b></td>
+              <td id="w-sunset">23:43</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <p>
+        
+      </p>
+      <button style="background-color:rgb(43, 181, 245) " onclick="getWeather();"><b style="color: rgb(72, 5, 104)"> Get weather information </b></button>
+
+      <footer>
+        <h6>University of Guilan</h6>
+      </footer>
+
+      <script src="weather.js"></script>
+    </div>
+  </body>
+</html>
